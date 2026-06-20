@@ -1,0 +1,530 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahmoud Alsaqqa - Senior Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- ======================= FLOATING HEADER ======================= -->
+  <header class="header" id="header">
+    <div class="header__container">
+      <a href="#top" class="header__logo">
+        <span class="header__badge">MA</span>
+        <div class="header__info">
+          <h2 class="header__name">Mahmoud Alsaqqa</h2>
+          <p class="header__subtitle">Senior Frontend Developer</p>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#top" class="nav-links__item nav-links__item--active">Home</a>
+        <a href="#stack" class="nav-links__item">Skills</a>
+        <a href="#process" class="nav-links__item">Process</a>
+        <a href="#experience" class="nav-links__item">Experience</a>
+        <a href="#projects" class="nav-links__item">Projects</a>
+        <a href="#contact" class="nav-links__item">Contact</a>
+      </nav>
+      <a href="#contact" class="cta-btn">
+        Let's Connect
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 17L17 7"></path>
+          <path d="M8 7h9v9"></path>
+        </svg>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <nav class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigation menu">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 6 6 18"></path>
+        <path d="m6 6 12 12"></path>
+      </svg>
+    </button>
+    <a class="mobile-nav-link" href="#top">Home</a>
+    <a class="mobile-nav-link" href="#stack">Skills</a>
+    <a class="mobile-nav-link" href="#process">Process</a>
+    <a class="mobile-nav-link" href="#experience">Experience</a>
+    <a class="mobile-nav-link" href="#projects">Projects</a>
+    <a class="mobile-cta" href="#contact">Let's Connect</a>
+  </nav>
+
+  <div id="top"></div>
+
+  <!-- ======================= HERO ======================= -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__content" data-reveal>
+          <div class="hero__intro">
+            <span class="hero__avatar">
+              <img src="assets/images/Mahmoud_Alsaqqa.JPG" alt="Mahmoud Alsaqqa" loading="eager">
+            </span>
+            <div class="hero__badge-group">
+              <span class="hero__dot"></span>
+              <span class="hero__label">Senior Frontend Developer</span>
+            </div>
+          </div>
+          <h1 class="hero__title">Building Scalable<br>Solutions. Engineering<br><span class="hero__accent">Digital
+              Experiences.</span></h1>
+          <p class="hero__description">Frontend Developer specializing in React and Next.js, focused on building
+            scalable web apps with clean architecture - delivering robust, maintainable UI with a strong emphasis on
+            efficient error handling and agile team collaboration.</p>
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn--primary">
+              Explore My Work
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M13 6l6 6-6 6"></path>
+              </svg>
+            </a>
+            <a href="assets/downloads/Mahmoud-Alsaqqa-Resume.pdf" target="_blank" download class="btn btn--secondary">
+              Download Resume
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v12"></path>
+                <path d="M7 11l5 5 5-5"></path>
+                <path d="M5 21h14"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/msaqqa" target="_blank" aria-label="GitHub" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 2.5-.34c.85 0 1.71.12 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2z">
+                </path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/ma-saqqa" target="_blank" aria-label="LinkedIn" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.4 8.65 21 11.1 21 14.3V21h-4v-6c0-1.43-.03-3.27-2-3.27-2 0-2.3 1.56-2.3 3.17V21H9z">
+                </path>
+              </svg>
+            </a>
+            <a href="https://wa.me/9705982o2675" target="_blank" aria-label="WhatsApp" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.03c-.24.68-1.4 1.3-1.94 1.38-.5.07-1.12.1-1.81-.11-.42-.13-.95-.31-1.64-.61-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.17-1.56-1.17-2.97 0-1.41.74-2.11 1-2.4.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.65.49.24.57.81 1.97.88 2.11.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.18 1.53 1.91 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.6-.07.17-.19.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.62.76 1.9.9.28.14.46.21.53.33.07.12.07.68-.17 1.36z">
+                </path>
+              </svg>
+            </a>
+            <a href="mailto:ma.saqqa@gmail.com" target="_blank" aria-label="Email" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="5" width="18" height="14" rx="2.5"></rect>
+                <path d="m4 7 8 6 8-6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-reveal>
+          <div class="hero__canvas-wrapper">
+            <canvas id="sphereCanvas" width="600" height="600"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= STATS BAR ======================= -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__grid" data-reveal>
+        <div class="stats__item">
+          <span class="stats__number">+7</span>
+          <span class="stats__label">Years Experience</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number">20+</span>
+          <span class="stats__label">Projects Completed</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number">15+</span>
+          <span class="stats__label">Technologies Mastered</span>
+        </div>
+        <div class="stats__item">
+          <span class="stats__number">100%</span>
+          <span class="stats__label">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= TECH STACK ======================= -->
+  <section id="stack" class="tech-section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <div class="section-header__badge">
+          <span class="section-header__dot"></span>
+          <span class="section-header__text">Tech Stack</span>
+        </div>
+        <h2 class="section-header__title">Technologies I Work With</h2>
+      </div>
+      <div class="tech-grid" data-reveal id="techGrid"></div>
+    </div>
+  </section>
+
+  <!-- ======================= DEVELOPMENT PROCESS ======================= -->
+  <section id="process" class="process-section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <div class="section-header__badge">
+          <span class="section-header__dot"></span>
+          <span class="section-header__text">Development Process</span>
+        </div>
+        <h2 class="section-header__title">My Development Process</h2>
+      </div>
+      <div class="process-row" data-reveal>
+        <div class="process-card">
+          <span class="process-card__number">01</span>
+          <svg class="process-card__icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
+            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9.5"></circle>
+            <polygon points="15.8 8.2 13.9 13.9 8.2 15.8 10.1 10.1"></polygon>
+          </svg>
+          <h3 class="process-card__title">Discovery & Analysis</h3>
+          <p class="process-card__description">Understanding requirements, analyzing scope, and planning the
+            architecture.</p>
+        </div>
+        <div class="process-conn">
+          <div class="process-conn__closed"></div>
+          <div class="process-conn__open"></div>
+        </div>
+        <div class="process-card">
+          <span class="process-card__number">02</span>
+          <svg class="process-card__icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
+            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m18 16 4-4-4-4"></path>
+            <path d="m6 8-4 4 4 4"></path>
+            <path d="m14.5 4-5 16"></path>
+          </svg>
+          <h3 class="process-card__title">Build & Integration</h3>
+          <p class="process-card__description">Writing clean, efficient code and integrating systems seamlessly.</p>
+        </div>
+        <div class="process-conn">
+          <div class="process-conn__closed"></div>
+          <div class="process-conn__open"></div>
+        </div>
+        <div class="process-card">
+          <span class="process-card__number">03</span>
+          <svg class="process-card__icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
+            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m12 14 4-4"></path>
+            <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+          </svg>
+          <h3 class="process-card__title">Test & Optimize</h3>
+          <p class="process-card__description">Rigorous testing and performance optimization for reliable solutions.</p>
+        </div>
+        <div class="process-conn">
+          <div class="process-conn__closed"></div>
+          <div class="process-conn__open"></div>
+        </div>
+        <div class="process-card">
+          <span class="process-card__number">04</span>
+          <svg class="process-card__icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff"
+            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+            <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+            </path>
+            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+          </svg>
+          <h3 class="process-card__title">Deploy & Scale</h3>
+          <p class="process-card__description">Seamless deployment and scaling for future growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= PROFESSIONAL JOURNEY ======================= -->
+  <section id="experience" class="experience-section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <div class="section-header__badge">
+          <span class="section-header__dot"></span>
+          <span class="section-header__text">Professional Journey</span>
+        </div>
+        <h2 class="section-header__title">My Professional Journey</h2>
+      </div>
+
+      <div class="experience-list">
+        <div class="exp-item" data-reveal>
+          <div class="exp-content">
+            <span class="exp-date">Jun 2024 - Present</span>
+            <h3 class="exp-title">Senior Frontend Developer</h3>
+            <div class="exp-company">Taqat</div>
+            <p class="exp-description">Building responsive, interactive web applications that elevate user experience,
+              collaborating with cross-functional teams to ship efficient solutions on time while keeping the codebase
+              clean and maintainable.</p>
+          </div>
+          <div class="exp-code">
+            <div class="code-header">
+              <span class="code-dot code-dot--red"></span>
+              <span class="code-dot code-dot--yellow"></span>
+              <span class="code-dot code-dot--green"></span>
+              <span class="code-filename">component.tsx</span>
+            </div>
+            <pre class="code-content"><span class="code-keyword">import</span> { useState } <span class="code-keyword">from</span> <span class="code-string">'react'</span>;
+<span class="code-keyword">import type</span> { CardProps } <span class="code-keyword">from</span> <span class="code-string">'./types'</span>;
+
+<span class="code-keyword">export function</span> <span class="code-function">ProjectCard</span>({ title }: CardProps) {
+  <span class="code-keyword">return</span> <span class="code-tag">&lt;article</span> <span class="code-attr">className</span>=<span class="code-string">"card"</span><span class="code-tag">&gt;</span>{title}<span class="code-tag">&lt;/article&gt;</span>;
+}</pre>
+          </div>
+        </div>
+
+        <div class="exp-item" data-reveal>
+          <div class="exp-content">
+            <span class="exp-date">Jun 2023 - Oct 2023</span>
+            <h3 class="exp-title">Frontend Developer - React</h3>
+            <div class="exp-company">MMB Technology</div>
+            <p class="exp-description">Developed and managed the Medicom project dashboard - ensuring responsiveness and
+              usability, and integrating the frontend with backend APIs for seamless data flow to medical users.</p>
+          </div>
+          <div class="exp-code">
+            <div class="code-header">
+              <span class="code-dot code-dot--red"></span>
+              <span class="code-dot code-dot--yellow"></span>
+              <span class="code-dot code-dot--green"></span>
+              <span class="code-filename">useFetch.js</span>
+            </div>
+            <pre class="code-content"><span class="code-keyword">const</span> <span class="code-function">useFetch</span> = (url) =&gt; {
+  <span class="code-keyword">const</span> [data, setData] = <span class="code-function">useState</span>(<span class="code-null">null</span>);
+  <span class="code-function">useEffect</span>(() =&gt; {
+    <span class="code-function">fetch</span>(url).<span class="code-function">then</span>(setData);
+  }, [url]);
+  <span class="code-keyword">return</span> data;
+};</pre>
+          </div>
+        </div>
+
+        <div class="exp-item" data-reveal>
+          <div class="exp-content">
+            <span class="exp-date">Nov 2021 - Feb 2022</span>
+            <h3 class="exp-title">Frontend Developer - React</h3>
+            <div class="exp-company">GGateway for Outsourcing IT</div>
+            <p class="exp-description">Built an e-commerce website with React and TypeScript inside a development team,
+              applying component-based architecture best practices and iterating on the product based on client
+              feedback.</p>
+          </div>
+          <div class="exp-code">
+            <div class="code-header">
+              <span class="code-dot code-dot--red"></span>
+              <span class="code-dot code-dot--yellow"></span>
+              <span class="code-dot code-dot--green"></span>
+              <span class="code-filename">styles.css</span>
+            </div>
+            <pre
+              class="code-content"><span class="code-selector">.btn</span> {
+  <span class="code-property">@apply</span> <span class="code-value">bg-blue-600 text-white</span>
+         <span class="code-value">rounded-xl px-5 py-3 font-medium</span>;
+}
+<span class="code-selector">.btn:hover</span> { <span class="code-property">@apply</span> <span class="code-value">bg-blue-500</span>; }</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= FEATURED PROJECTS ======================= -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <div class="section-header__badge">
+          <span class="section-header__dot"></span>
+          <span class="section-header__text">Featured Projects</span>
+        </div>
+        <h2 class="section-header__title">Featured Projects</h2>
+      </div>
+
+      <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 22px"
+        id="projectsTrack"></div>
+    </div>
+  </section>
+
+  <!-- ======================= TESTIMONIALS ======================= -->
+  <!-- <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <div class="section-header__badge">
+          <span class="section-header__dot"></span>
+          <span class="section-header__text">Testimonial</span>
+        </div>
+        <h2 class="section-header__title">What Clients Say</h2>
+      </div>
+
+      <div class="testimonials-carousel" data-reveal>
+        <button class="testimonials-nav__btn" id="prevTestimonial" aria-label="Previous">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 18l-6-6 6-6"></path>
+          </svg>
+        </button>
+
+        <div class="testimonials-slider">
+          <div class="testimonials-track" id="testimonialsTrack"></div>
+        </div>
+
+        <button class="testimonials-nav__btn" id="nextTestimonial" aria-label="Next">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 6l6 6-6 6"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ======================= CONTACT CTA ======================= -->
+  <section id="contact" class="contact-cta">
+    <div class="container">
+      <div class="contact-cta__card" data-reveal>
+        <div class="contact-cta__badge">
+          <span class="contact-cta__dot"></span>
+          <span class="contact-cta__badge-text">Available For New Projects</span>
+        </div>
+        <h2 class="contact-cta__title">Have A Project In Mind?</h2>
+        <p class="contact-cta__description">I'm always open to discussing new opportunities, collaborations, or just
+          talking about frontend craft. Let's build something exceptional together.</p>
+        <div class="contact-cta__buttons">
+          <a href="mailto:ma.saqqa@gmail.com" class="btn btn--primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="5" width="18" height="14" rx="2.5"></rect>
+              <path d="m4 7 8 6 8-6"></path>
+            </svg>
+            ma.saqqa@gmail.com
+          </a>
+          <a href="tel:+970598292675" class="btn btn--secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 5c0 8 7 15 15 15l1-3-5-2-2 2a12 12 0 0 1-6-6l2-2-2-5z"></path>
+            </svg>
+            +970 598 292 675
+          </a>
+        </div>
+        <div class="social-links contact-cta__social">
+          <a href="https://www.linkedin.com/in/ma-saqqa" target="_blank" aria-label="LinkedIn" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.4 8.65 21 11.1 21 14.3V21h-4v-6c0-1.43-.03-3.27-2-3.27-2 0-2.3 1.56-2.3 3.17V21H9z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://github.com/msaqqa" target="_blank" aria-label="GitHub" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 2.5-.34c.85 0 1.71.12 2.5.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://wa.me/970598292675" target="_blank" aria-label="WhatsApp" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.03c-.24.68-1.4 1.3-1.94 1.38-.5.07-1.12.1-1.81-.11-.42-.13-.95-.31-1.64-.61-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.17-1.56-1.17-2.97 0-1.41.74-2.11 1-2.4.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.65.49.24.57.81 1.97.88 2.11.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.18 1.53 1.91 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.6-.07.17-.19.69-.81.88-1.09.18-.28.37-.23.62-.14.25.09 1.62.76 1.9.9.28.14.46.21.53.33.07.12.07.68-.17 1.36z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__about">
+          <a href="#top" class="footer__logo">
+            <span class="footer__badge">MA</span>
+            <div>
+              <div class="footer__name">Mahmoud Alsaqqa</div>
+              <div class="footer__subtitle">Senior Frontend Developer</div>
+            </div>
+          </a>
+          <p class="footer__description">Frontend Developer specializing in React and Next.js, building scalable,
+            accessible web apps with clean, maintainable code.</p>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__heading">Quick Links</h3>
+          <div class="footer__links">
+            <a href="#top" class="footer__link">Home</a>
+            <a href="#stack" class="footer__link">Skills</a>
+            <a href="#process" class="footer__link">Process</a>
+            <a href="#experience" class="footer__link">Experience</a>
+            <a href="#projects" class="footer__link">Projects</a>
+          </div>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__heading">Services</h3>
+          <div class="footer__services">
+            <span>Web Development</span>
+            <span>Frontend Architecture</span>
+            <span>UI/UX Implementation</span>
+            <span>Performance Optimization</span>
+            <span>Design Systems</span>
+          </div>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__heading">Get In Touch</h3>
+          <div class="footer__contact">
+            <a href="mailto:ma.saqqa@gmail.com" class="footer__contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="5" width="18" height="14" rx="2.5"></rect>
+                <path d="m4 7 8 6 8-6"></path>
+              </svg>
+              ma.saqqa@gmail.com
+            </a>
+            <div class="footer__contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 5c0 8 7 15 15 15l1-3-5-2-2 2a12 12 0 0 1-6-6l2-2-2-5z"></path>
+              </svg>
+              +970 598 292 675
+            </div>
+            <div class="footer__contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"></path>
+                <circle cx="12" cy="10" r="2.4"></circle>
+              </svg>
+              Palestine - Remote
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__status-dot"></span>
+              Available for new projects
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span class="footer__copyright">© 2026 Mahmoud Alsaqqa. All rights reserved.</span>
+        <span class="footer__credit">Built with <span class="footer__heart">me</span> and clean code.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
