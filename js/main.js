@@ -68,12 +68,14 @@ const projects = [
     link: "https://github.com/msaqqa/shoplit",
   },
   {
-    title: "E-Commerce Platform",
+    title: "Freelancer Platform",
     description:
-      "Full-featured e-commerce platform with payment integration and admin panel.",
-    tags: ["Next.js", "Node.js", "Stripe"],
-    gradient: "linear-gradient(135deg,#0c2f3a,#0a1626)",
-    caption: "storefront",
+      "Bilingual freelance marketplace connecting clients with freelancers — profiles, services, OAuth auth, onboarding flows, and full Arabic/English RTL support.",
+    tags: ["Next.js 15", "React 19", "Tailwind 4", "Supabase", "TanStack Query", "Zustand"],
+    gradient: "linear-gradient(135deg,#2a1f4f,#0a1428)",
+    caption: "marketplace",
+    image: "assets/images/freelancer-platform-dark.png",
+    link: "https://github.com/msaqqa/freelancer-platform",
   },
 ];
 
