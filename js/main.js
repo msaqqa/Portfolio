@@ -25,31 +25,21 @@ const technologies = [
   { name: "CSS", svg: icon("css") },
   { name: "Tailwind CSS", svg: icon("tailwindcss") },
   { name: "Bootstrap", svg: icon("bootstrap") },
+  { name: "Firebase", svg: icon("firebase") },
   { name: "Redux", svg: icon("redux") },
-  { name: "TanStack", svg: icon("tanstack") },
   { name: "shadcn/ui", svg: icon("shadcnui", "white") },
   { name: "Prisma", svg: icon("prisma", "white") },
   { name: "Supabase", svg: icon("supabase") },
   { name: "PostgreSQL", svg: icon("postgresql") },
   { name: "Vercel", svg: icon("vercel", "white") },
   { name: "Git", svg: icon("git") },
+  // { name: "TanStack", svg: icon("tanstack") },
   // { name: "Vite", svg: icon("vite") },
   // { name: "Node.js", svg: icon("nodedotjs") },
   // { name: "MongoDB", svg: icon("mongodb") },
-  // { name: "Firebase", svg: icon("firebase") },
 ];
 
 const projects = [
-  {
-    title: "Liberation Language Labs CMS",
-    description:
-      "Production-ready CMS and public marketing site with an admin panel, blog, REST & GraphQL APIs, and S3-backed media storage.",
-    tags: ["Next.js 16", "React 19", "TypeScript", "Payload CMS", "PostgreSQL"],
-    gradient: "linear-gradient(135deg,#102a4f,#0a1428)",
-    caption: "headless cms",
-    image: "assets/images/liberation-language-labs.png",
-    link: "https://github.com/msaqqa/liberation-language-labs-cms",
-  },
   {
     title: "Shoplit",
     description:
@@ -68,13 +58,30 @@ const projects = [
     link: "https://github.com/msaqqa/shoplit",
   },
   {
+    title: "Liberation Language Labs CMS",
+    description:
+      "Production-ready CMS and public marketing site with an admin panel, blog, REST & GraphQL APIs, and S3-backed media storage.",
+    tags: ["Next.js 16", "React 19", "TypeScript", "Payload CMS", "PostgreSQL"],
+    gradient: "linear-gradient(135deg,#102a4f,#0a1428)",
+    caption: "headless cms",
+    image: "assets/images/liberation-language-labs.png",
+    link: "https://github.com/msaqqa/liberation-language-labs-cms",
+  },
+  {
     title: "Freelancer Platform",
     description:
       "Bilingual freelance marketplace connecting clients with freelancers — profiles, services, OAuth auth, onboarding flows, and full Arabic/English RTL support.",
-    tags: ["Next.js 15", "React 19", "Tailwind 4", "Supabase", "TanStack Query", "Zustand"],
+    tags: [
+      "Next.js 15",
+      "React 19",
+      "Tailwind 4",
+      "Supabase",
+      "TanStack Query",
+      "i18next",
+    ],
     gradient: "linear-gradient(135deg,#2a1f4f,#0a1428)",
     caption: "marketplace",
-    image: "assets/images/freelancer-platform-dark.png",
+    image: "assets/images/freelancer-platform-light.png",
     link: "https://github.com/msaqqa/freelancer-platform",
   },
 ];
