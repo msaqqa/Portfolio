@@ -127,6 +127,15 @@ a {
   letter-spacing: 0.01em;
 }
 
+.header__logo-image {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+}
+
 .header__info {
   display: flex;
   flex-direction: column;
@@ -1339,6 +1348,7 @@ main {
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.02em;
+  margin-bottom: 6px;
 }
 
 .footer__subtitle {
